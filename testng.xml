@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="5">
+    <test verbose="2" preserve-order="true" name="testchrome">
+
+        <parameter name="browser" value="chrome"></parameter>
+        <parameter name="url" value="https://wise-moose-ddixuq-dev-ed.trailblaze.my.salesforce.com"></parameter>
+
+        <classes>
+            <class name="TestRunner.TestRun"></class>
+
+        </classes>
+
+
+    </test>
+</suite>
