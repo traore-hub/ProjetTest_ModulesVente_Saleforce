@@ -1,4 +1,4 @@
-package Stepdefinition.opportunity;
+package Stepdefinition;
 
 import helpers.BrowserHelper;
 import io.cucumber.java.en.Given;

@@ -1,4 +1,4 @@
-package Stepdefinition.opportunity;
+package Stepdefinition;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import static helpers.BrowserHelper.driver;
+
 
 public class ModifyOpportunity {
 

@@ -74,9 +74,9 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>cucumberReporting</td>
+      <td>TestTalanTunisieSalesforce</td>
         <td>1</td>
-      <td>14 Nov 2022, 14:49</td>
+      <td>15 Nov 2022, 17:05</td>
     </tr>
   </tbody>
 </table>
@@ -129,9 +129,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Verification opportunity</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >4</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td     class="skipped"   >2</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
@@ -140,7 +140,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="71605507700">1:11.605</td>
+          <td class="duration" data-value="9141602400">9.141</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -193,7 +193,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">1:11.605</span>
+  <span class="lead-duration duration">9.141</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -236,7 +236,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">launch salesforce plateform opportunity section list</span>
 
-  <span class="lead-duration duration">46.448</span>
+  <span class="lead-duration duration">0.003</span>
 
 </div>
 
@@ -263,7 +263,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">click opportunity</span>
 
-  <span class="lead-duration duration">5.694</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -290,7 +290,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">select opportunity</span>
 
-  <span class="lead-duration duration">3.995</span>
+  <span class="lead-duration duration">3.864</span>
 
 </div>
 
@@ -313,11 +313,38 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then failed">
+<div class="brief step-name-Then passed">
   <span class="keyword indention">Then</span>
   <span class="name">change the date</span>
 
-  <span class="lead-duration duration">15.467</span>
+  <span class="lead-duration duration">5.222</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">verify last date and current date</span>
+
+  <span class="lead-duration duration">0.049</span>
 
 </div>
 
@@ -329,62 +356,22 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+          <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;slds-day&quot;&gt; could not be scrolled into view
-Build info: version: '4.5.2', revision: '702c64f787c'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [84bc1cd9-2c28-405d-92ad-4a41aa85420d, clickElement {id=c1226a28-dab7-4b1f-b64a-eddc83dbf25e}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.1, moz:accessibilityChecks: false, moz:buildID: 20221019185550, moz:debuggerAddress: 127.0.0.1:28069, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 444, moz:profile: C:\Users\toumarou\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:28069/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (84bc1cd9-2c28-405d-92ad-4a41aa85420d)] -&gt; xpath: //*/text()[normalize-space(.)='14']/parent::*]
-Session ID: 84bc1cd9-2c28-405d-92ad-4a41aa85420d
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at Stepdefinition.VerifyOpportunity.change_the_date(VerifyOpportunity.java:50)
-	at &#10045;.change the date(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/VerifyOpportunity.feature:8)
+        <pre>java.lang.AssertionError: expected [06/10/2022] but found [14/10/2022]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Stepdefinition.VerifyOpportunity.verify_date_and_current_date(VerifyOpportunity.java:51)
+	at &#10045;.verify last date and current date(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/VerifyOpportunity.feature:9)
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">verify last date and current date</span>
-
-  <span class="lead-duration duration">0.000</span>
-
-</div>
-
-
-
-
-
 
 
 

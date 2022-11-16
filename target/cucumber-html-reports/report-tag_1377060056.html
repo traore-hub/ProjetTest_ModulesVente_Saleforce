@@ -74,9 +74,9 @@ $(document).ready(function() {
   </thead>
   <tbody>
     <tr class="info">
-      <td>cucumberReporting</td>
+      <td>TestTalanTunisieSalesforce</td>
         <td>1</td>
-      <td>14 Nov 2022, 14:49</td>
+      <td>16 Nov 2022, 11:02</td>
     </tr>
   </tbody>
 </table>
@@ -129,9 +129,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@Verify</td>
-          <td      class="passed"    >3</td>
+          <td      class="passed"    >2</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >3</td>
+          <td     class="skipped"   >4</td>
           <td >0</td>
           <td >0</td>
           <td class="total">7</td>
@@ -140,7 +140,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="71605507700">1:11.605</td>
+          <td class="duration" data-value="30620680900">30.620</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -173,17 +173,18 @@ $(document).ready(function() {
 <div class="element">
     <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_3341300774.html">Verification opportunity</a>
+      <a href="report-feature_1907960095.html">TestSalesforce</a>
     </div>
 
 
 <div class="tags indention">
     <b>Tags:</b>
+       <a href="report-tag_2209192177.html">@Test</a>
        <a href="report-tag_1377060056.html">@Verify</a>
 </div>
 
 
-  <span class="lead-duration duration">1:11.605</span>
+  <span class="lead-duration duration">30.620</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -226,7 +227,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">launch salesforce plateform opportunity section list</span>
 
-  <span class="lead-duration duration">46.448</span>
+  <span class="lead-duration duration">0.001</span>
 
 </div>
 
@@ -253,7 +254,7 @@ $(document).ready(function() {
   <span class="keyword indention">When</span>
   <span class="name">click opportunity</span>
 
-  <span class="lead-duration duration">5.694</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -276,38 +277,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And failed">
   <span class="keyword indention">And</span>
   <span class="name">select opportunity</span>
 
-  <span class="lead-duration duration">3.995</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">change the date</span>
-
-  <span class="lead-duration duration">15.467</span>
+  <span class="lead-duration duration">30.617</span>
 
 </div>
 
@@ -322,14 +296,15 @@ $(document).ready(function() {
           <a>org.openqa.selenium.ElementNotInteractableException:</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.ElementNotInteractableException: Element &lt;span class=&quot;slds-day&quot;&gt; could not be scrolled into view
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=107.0.5304.107)
 Build info: version: '4.5.2', revision: '702c64f787c'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [84bc1cd9-2c28-405d-92ad-4a41aa85420d, clickElement {id=c1226a28-dab7-4b1f-b64a-eddc83dbf25e}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.1, moz:accessibilityChecks: false, moz:buildID: 20221019185550, moz:debuggerAddress: 127.0.0.1:28069, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 444, moz:profile: C:\Users\toumarou\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:28069/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Element: [[FirefoxDriver: firefox on WINDOWS (84bc1cd9-2c28-405d-92ad-4a41aa85420d)] -&gt; xpath: //*/text()[normalize-space(.)='14']/parent::*]
-Session ID: 84bc1cd9-2c28-405d-92ad-4a41aa85420d
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9c84f832bcf19399bc6f442300977314, clickElement {id=1b63c2ce-d35a-4c02-9039-6caa0d2a0950}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\toumarou\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:54539}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54539/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9c84f832bcf19399bc6f442300977314)] -&gt; xpath: //th/span/a]
+Session ID: 9c84f832bcf19399bc6f442300977314
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -342,12 +317,39 @@ Session ID: 84bc1cd9-2c28-405d-92ad-4a41aa85420d
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
 	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at Stepdefinition.VerifyOpportunity.change_the_date(VerifyOpportunity.java:50)
-	at &#10045;.change the date(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/VerifyOpportunity.feature:8)
+	at Stepdefinition.VerifyOpportunity.select_opportunity(VerifyOpportunity.java:36)
+	at &#10045;.select opportunity(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/Opportunity.feature:26)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">change the date</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 
