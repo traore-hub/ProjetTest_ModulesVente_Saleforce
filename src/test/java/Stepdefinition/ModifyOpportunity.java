@@ -1,37 +1,27 @@
-package Stepdefinition;
+package Stepdefinition.opportunity;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import utils.ConfigFile;
 
-import java.util.concurrent.TimeUnit;
+import static helpers.BrowserHelper.driver;
 
 public class ModifyOpportunity {
-    WebDriver driver;
+
     @BeforeClass
     @Given("navigate to url salesforce modify")
     public void navigate_to_url_salesforce_modify() {
-        if( ConfigFile.property.getProperty("Browsertype").equalsIgnoreCase("Chrome")){
-            System.setProperty("webdriver.chrome.driver","src/main/resources/Drivers/chromedriver.exe");
-            driver = new ChromeDriver();
+      /*  if( ConfigFile.property.getProperty("Browsertype").equalsIgnoreCase("Chrome")){
+            Helpers.helperbrowserChrome();
         }
         if (ConfigFile.property.getProperty("Browser").equalsIgnoreCase("firefox")) {
-            System.setProperty("webdriver.gecko.driver","src/main/resources/Drivers/geckodriver.exe");
-            driver =new FirefoxDriver();
+            Helpers.helperbrowserfirefox();
         }
-        driver.navigate().to(ConfigFile.property.getProperty("url"));
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(ConfigFile.property.getProperty("login"));
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(ConfigFile.property.getProperty("password"));
-        driver.findElement(By.xpath("//input[@id='Login']")).click();
+       */
+        System.out.println("Test started****************");
     }
     @Test
     @When("user check opportunity list")
@@ -41,7 +31,7 @@ public class ModifyOpportunity {
     @Test
     @When("select opportunity and click")
     public void select_opportunity_and_click() {
-        driver.findElement(By.xpath("//a[contains(@href, '/lightning/r/0068d000009iEmQAAU/view')]")).click();
+        driver.findElement(By.xpath("//th/span/a")).click();
     }
     @Test
     @When("click button modify")
@@ -52,6 +42,7 @@ public class ModifyOpportunity {
     @When("modify information the opportunity")
     public void modify_information_the_opportunity() {
      driver.findElement(By.xpath("//records-record-layout-base-input/lightning-input/div/input")).click();
+        driver.findElement(By.xpath("//records-record-layout-base-input/lightning-input/div/input")).clear();
         driver.findElement(By.xpath("//records-record-layout-base-input/lightning-input/div/input")).sendKeys("CDI TALAN FRANCE");
 
     }
@@ -59,7 +50,8 @@ public class ModifyOpportunity {
     @Then("click save")
     public void click_save() {
         driver.findElement(By.xpath("//records-record-layout-base-input/lightning-input/div/input")).click();
-        driver.quit();
+        //BrowserHelper.helperbrowserclose();
+        System.out.println("************Test finish***************");
     }
 
 }

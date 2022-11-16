@@ -1,42 +1,32 @@
-package Stepdefinition;
+package Stepdefinition.opportunity;
 
+import helpers.BrowserHelper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import utils.ConfigFile;
 
-import java.util.concurrent.TimeUnit;
+import static helpers.BrowserHelper.driver;
 
 public class CreationOppportunity {
-
-    public WebDriver driver;
 
 
    @BeforeClass
     @Given("navigate to url salesforce")
     public void navigate_to_url_salesforce() {
-       if( ConfigFile.property.getProperty("Browsertype").equalsIgnoreCase("Chrome")){
-           System.setProperty("webdriver.chrome.driver","src/main/resources/Drivers/chromedriver.exe");
-           driver = new ChromeDriver();
+     /*  if(ConfigFile.property.getProperty("Browsertype").equalsIgnoreCase("Chrome")){
+           Helpers.helperbrowserChrome();
+
        }
        if (ConfigFile.property.getProperty("Browser").equalsIgnoreCase("firefox")) {
-           System.setProperty("webdriver.gecko.driver","src/main/resources/Drivers/geckodriver.exe");
-           driver =new FirefoxDriver();
-       }
-       driver.navigate().to(ConfigFile.property.getProperty("url"));
-       driver.manage().window().maximize();
-       driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-        driver.findElement(By.xpath("//input[@id='username']")).sendKeys(ConfigFile.property.getProperty("login"));
-        driver.findElement(By.xpath("//input[@id='password']")).sendKeys(ConfigFile.property.getProperty("password"));
-        driver.findElement(By.xpath("//input[@id='Login']")).click();
+           Helpers.helperbrowserfirefox();
+       }*/
+       System.out.println("Test started****************");
+
     }
 
 
@@ -59,7 +49,7 @@ public class CreationOppportunity {
         driver.findElement(By.xpath("//records-record-layout-base-input/lightning-input/div/input")).sendKeys("CDI TALAN");
         driver.findElement(By.xpath("//lightning-datepicker/div/div/input")).sendKeys(string3);
 
-                driver.findElement(By.xpath("//lightning-base-combobox/div/div/button")).click();
+               driver.findElement(By.xpath("//lightning-base-combobox/div/div/button")).click();
         driver.findElement(By.xpath("//lightning-base-combobox-item[3]/span[2]/span")).click();
         driver.findElement(By.xpath("//li[3]/runtime_platform_actions-action-renderer/runtime_platform_actions-executor-lwc-headless/slot/slot/lightning-button/button")).click();
 
@@ -77,8 +67,9 @@ public class CreationOppportunity {
     @AfterClass
     @Then("close Browser")
     public void close_browser() {
-        driver.close();
-        driver.quit();
+        //BrowserHelper.helperbrowserclose();
+        System.out.println("************Test finish***************");
+
     }
 
 }
