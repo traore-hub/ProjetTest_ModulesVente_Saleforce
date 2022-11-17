@@ -19,15 +19,15 @@ import java.io.FileNotFoundException;
 },
         features = "src/main/resources/Features",
         glue = "Stepdefinition",
-        tags ="@ModifyCampagn"
+        tags ="@TestOpportunity or @TestCampagn"
 )
 public class TestRun{
 
     @BeforeClass
     public static void setup() throws FileNotFoundException {
         ConfigFile.initialiseFile();
-        BrowserHelper.helperbrowserChrome();
-        //Helpers.helperbrowserfirefox();
+        //BrowserHelper.helperbrowserChrome();
+       BrowserHelper.helperbrowserfirefox();
         //Helpers.helperbrowseredge();
 
     }

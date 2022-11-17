@@ -25,6 +25,7 @@ public class VerifyOpportunity {
         }
       */
         System.out.println("***********************Test started****************");
+        BrowserHelper.helperbrowserfirefox();
     }
     @When("click opportunity")
     public void click_opportunity() {
@@ -65,7 +66,7 @@ public class VerifyOpportunity {
         String newName = driver.findElement(By.xpath("//lightning-formatted-text")).getText();
         System.out.println("le message est: "+ newName);
         Assert.assertEquals(newName,"CDI TALAN");
-        //BrowserHelper.helperbrowserclose();
+        BrowserHelper.helperbrowserclose();
 
         System.out.println("************Test finish***************");
 

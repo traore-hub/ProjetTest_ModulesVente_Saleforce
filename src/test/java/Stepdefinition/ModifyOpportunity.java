@@ -1,5 +1,6 @@
 package Stepdefinition;
 
+import helpers.BrowserHelper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -7,6 +8,7 @@ import org.openqa.selenium.By;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import static helpers.BrowserHelper.driver;
 
 
 public class ModifyOpportunity {
@@ -22,6 +24,7 @@ public class ModifyOpportunity {
         }
        */
         System.out.println("Test started****************");
+        BrowserHelper.helperbrowserfirefox();
     }
     @Test
     @When("user check opportunity list")
@@ -50,7 +53,7 @@ public class ModifyOpportunity {
     @Then("click save")
     public void click_save() {
         driver.findElement(By.xpath("//records-record-layout-base-input/lightning-input/div/input")).click();
-        //BrowserHelper.helperbrowserclose();
+        BrowserHelper.helperbrowserclose();
         System.out.println("************Test finish***************");
     }
 

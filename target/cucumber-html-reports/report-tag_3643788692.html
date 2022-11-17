@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>TestTalanTunisieSalesforce</td>
         <td>1</td>
-      <td>16 Nov 2022, 15:07</td>
+      <td>16 Nov 2022, 17:07</td>
     </tr>
   </tbody>
 </table>
@@ -129,18 +129,18 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@TestCampagn</td>
-          <td      class="passed"    >6</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >10</td>
+          <td      class="failed"    >2</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td class="total">7</td>
+          <td class="total">13</td>
 
           <td >0</td>
-          <td  class="failed"    >1</td>
-          <td class="total">1</td>
+          <td  class="failed"    >2</td>
+          <td class="total">2</td>
 
-          <td class="duration" data-value="41961959400">41.961</td>
+          <td class="duration" data-value="21935597100">21.935</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -180,18 +180,18 @@ $(document).ready(function() {
 <div class="tags indention">
     <b>Tags:</b>
        <a href="report-tag_3643788692.html">@TestCampagn</a>
-       <a href="report-tag_386249836.html">@ModifyCampagn</a>
+       <a href="report-tag_3451657706.html">@CreateCampagn</a>
 </div>
 
 
-  <span class="lead-duration duration">41.961</span>
+  <span class="lead-duration duration">12.404</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
 <div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Modify Campagn</span>
+  <span class="name">Create campagn</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -227,7 +227,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">launch salesforce portals</span>
 
-  <span class="lead-duration duration">3.951</span>
+  <span class="lead-duration duration">2.287</span>
 
 </div>
 
@@ -252,36 +252,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">chech campagn list</span>
+  <span class="name">navigate salesforce modules campagn</span>
 
-  <span class="lead-duration duration">0.944</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">click campagn</span>
-
-  <span class="lead-duration duration">2.340</span>
+  <span class="lead-duration duration">2.278</span>
 
 </div>
 
@@ -306,9 +279,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">change the name</span>
+  <span class="name">click button campagn</span>
 
-  <span class="lead-duration duration">2.024</span>
+  <span class="lead-duration duration">1.434</span>
 
 </div>
 
@@ -333,9 +306,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">change date</span>
+  <span class="name">give the informations the campagn</span>
 
-  <span class="lead-duration duration">2.597</span>
+  <span class="lead-duration duration">2.623</span>
 
 </div>
 
@@ -362,7 +335,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">click save campagn</span>
 
-  <span class="lead-duration duration">0.042</span>
+  <span class="lead-duration duration">3.713</span>
 
 </div>
 
@@ -387,9 +360,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-Then failed">
   <span class="keyword indention">Then</span>
-  <span class="name">verify if campagn name and date is modify</span>
+  <span class="name">verify if campagn is create</span>
 
-  <span class="lead-duration duration">30.062</span>
+  <span class="lead-duration duration">0.066</span>
 
 </div>
 
@@ -401,18 +374,260 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
-          <a>org.openqa.selenium.NoSuchElementException:</a>
+          <a>java.lang.AssertionError:</a>
       </div>
       <div id="msg-3" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@id='toastDescription13532:0']/span&quot;}
-  (Session info: chrome=107.0.5304.107)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+        <pre>java.lang.AssertionError: expected [Campagne est bien cr&eacute;e] but found [Campagne &quot;Campagne de recrutement Stagiaire&quot; cr&eacute;&eacute;(e).]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1413)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at Stepdefinition.CreateCampagn.verify_if_campagn_is_create(CreateCampagn.java:54)
+	at &#10045;.verify if campagn is create(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/Campagne.feature:11)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+  </div>
+</div>
+
+
+<div class="element">
+    <div class="indention">
+      <b>Feature:</b>
+      <a href="report-feature_2679028544.html">Campagn salesforce</a>
+    </div>
+
+
+<div class="tags indention">
+    <b>Tags:</b>
+       <a href="report-tag_3643788692.html">@TestCampagn</a>
+       <a href="report-tag_386249836.html">@ModifyCampagn</a>
+</div>
+
+
+  <span class="lead-duration duration">9.531</span>
+
+
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-4">
+
+<div class="brief failed">
+  <span class="keyword indention">Scenario</span>
+  <span class="name">Modify Campagn</span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </span>
+  <div class="description indention"></div>
+
+  <div id="element-4" class="collapse collapsable-details  in ">
+
+
+
+
+
+<div class="steps inner-level">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
+
+<div class="brief failed">
+  <span class="keyword indention">Steps</span>
+  <span class="name"></span>
+
+
+     <i class="chevron fa fa-fw"></i>
+</div>
+
+  </div>
+
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
+      <div class="step">
+
+
+<div class="brief step-name-Given passed">
+  <span class="keyword indention">Given</span>
+  <span class="name">launch salesforce portals</span>
+
+  <span class="lead-duration duration">0.693</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">chech campagn list</span>
+
+  <span class="lead-duration duration">0.701</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">click campagn</span>
+
+  <span class="lead-duration duration">3.707</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">change the name</span>
+
+  <span class="lead-duration duration">1.198</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">change date</span>
+
+  <span class="lead-duration duration">2.890</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">click save campagn</span>
+
+  <span class="lead-duration duration">0.340</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.openqa.selenium.ElementClickInterceptedException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: Element &lt;span class=&quot;title&quot;&gt; is not clickable at point (1371,350) because another element &lt;div class=&quot;panel slds-modal slds-fade-in-open&quot;&gt; obscures it
 Build info: version: '4.5.2', revision: '702c64f787c'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [6e2f0fc252eb035d0f3df80415a97c85, findElement {using=xpath, value=//div[@id='toastDescription13532:0']/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\toumarou\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:52200}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52200/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 6e2f0fc252eb035d0f3df80415a97c85
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [cfef4844-7958-4ed5-a0ae-168341761af4, clickElement {id=4a2c1b9b-8151-4d97-8900-5e336f236a71}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 106.0.1, moz:accessibilityChecks: false, moz:buildID: 20221019185550, moz:debuggerAddress: 127.0.0.1:42242, moz:geckodriverVersion: 0.32.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9772, moz:profile: C:\Users\toumarou\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://127.0.0.1:42242/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Element: [[FirefoxDriver: firefox on WINDOWS (cfef4844-7958-4ed5-a0ae-168341761af4)] -&gt; xpath: (.//*[normalize-space(text()) and normalize-space(.)='Nouvelle t&acirc;che'])[1]/following::span[4]]
+Session ID: cfef4844-7958-4ed5-a0ae-168341761af4
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -424,16 +639,41 @@ Session ID: 6e2f0fc252eb035d0f3df80415a97c85
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
-	at Stepdefinition.ModifyCampagn.verify_if_campagn_name_and_date_is_modify(ModifyCampagn.java:45)
-	at &#10045;.verify if campagn name and date is modify(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/Campagne.feature:21)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at Stepdefinition.CreateCampagn.click_save_campagn(CreateCampagn.java:45)
+	at &#10045;.click save campagn(file:///C:/Users/toumarou/IdeaProjects/Testsalesforce-master/src/main/resources/Features/Campagne.feature:20)
 </pre>
       </div>
     </div>
   </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
+  <span class="keyword indention">Then</span>
+  <span class="name">verify if campagn name and date is modify</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
 
 
 

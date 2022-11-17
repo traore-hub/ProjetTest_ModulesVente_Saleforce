@@ -1,9 +1,11 @@
 package Stepdefinition;
 
+import helpers.BrowserHelper;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import static helpers.BrowserHelper.driver;
@@ -37,8 +39,13 @@ public class CreateCampagn {
         driver.findElement(By.xpath("//div[7]/div/div/div/div/div/input")).sendKeys("12/12/2023");
     }
     @When("click save campagn")
-    public void click_save_campagn() {
+    public void click_save_campagn() throws Exception {
         driver.findElement(By.xpath("//button[3]/span")).click();
+
+        driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Nouvelle tâche'])[1]/following::span[4]")).click();
+        driver.findElement(By.xpath("//li/input")).click();
+        driver.findElement(By.xpath("//li/input")).sendKeys("traore.oumarou@talan.com");
+        driver.findElement(By.xpath("//div[3]/div/div/div[2]/div[2]/button/span")).click();
     }
     @Then("verify if campagn is create")
     public void verify_if_campagn_is_create() {

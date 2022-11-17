@@ -1,5 +1,6 @@
 package Stepdefinition;
 
+import helpers.BrowserHelper;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
@@ -45,5 +46,6 @@ public class ModifyCampagn {
         String newName = driver.findElement(By.xpath("//div[@id='toastDescription13532:0']/span")).getText();
         System.out.println("le message est: "+ newName);
         Assert.assertEquals(newName,"Recruitement Talan Academy");
+
     }
 }

@@ -67,7 +67,7 @@ public class CreationOppportunity {
     @AfterClass
     @Then("close Browser")
     public void close_browser() {
-        //BrowserHelper.helperbrowserclose();
+        BrowserHelper.helperbrowserclose();
         System.out.println("************Test finish***************");
 
     }

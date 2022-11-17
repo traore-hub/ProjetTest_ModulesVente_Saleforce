@@ -1,4 +1,4 @@
-@Test
+@TestOpportunity
 Feature: TestSalesforce
   I want to use this template for my feature file
  @Create

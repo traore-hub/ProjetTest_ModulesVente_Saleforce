@@ -25,6 +25,7 @@ public class DeleteOpportunity {
             Helpers.helperbrowserfirefox();
         }*/
         System.out.println("*******************Test started****************");
+        BrowserHelper.helperbrowserfirefox();
     }
   @Test
     @When("check opportunity by name")
